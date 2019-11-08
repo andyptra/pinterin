@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pinterin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="113"/>
+        </scene>
+        <!--MyBW View Controller-->
+        <scene sceneID="279-6h-rcH">
+            <objects>
+                <viewController storyboardIdentifier="bw0" id="mp3-Kp-3uU" customClass="MyBWViewController" customModule="Pinterin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iKX-aY-D6p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Xss-6S-XXp">
+                                <rect key="frame" x="80" y="610" width="215" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Q7V-f1-rgS"/>
+                                </constraints>
+                            </pageControl>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="bY3-h4-yku" firstAttribute="bottom" secondItem="Xss-6S-XXp" secondAttribute="bottom" constant="20" id="fbX-fE-TYy"/>
+                            <constraint firstItem="Xss-6S-XXp" firstAttribute="leading" secondItem="bY3-h4-yku" secondAttribute="leading" constant="80" id="nhw-aK-Bf9"/>
+                            <constraint firstItem="bY3-h4-yku" firstAttribute="trailing" secondItem="Xss-6S-XXp" secondAttribute="trailing" constant="80" id="w2U-5k-Kbm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bY3-h4-yku"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="Xss-6S-XXp" id="ATL-6Z-sHF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6NI-2i-u3X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="589.60000000000002" y="112.89355322338831"/>
+        </scene>
+        <!--Halaman Satu View Controller-->
+        <scene sceneID="py9-S3-JIx">
+            <objects>
+                <viewController storyboardIdentifier="bw1" id="EFK-8H-n80" customClass="HalamanSatuViewController" customModule="Pinterin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fwr-ED-1c3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagepg1" translatesAutoresizingMaskIntoConstraints="NO" id="C5a-Ag-lGI">
+                                <rect key="frame" x="87.5" y="108" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="F4R-hy-K0G"/>
+                                    <constraint firstAttribute="height" constant="200" id="GiJ-xn-rp7"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdD-zU-BTL">
+                                <rect key="frame" x="47.5" y="609" width="50" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Lewati">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pindahD:" destination="EFK-8H-n80" eventType="touchUpInside" id="szO-Ql-7Cl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="qvs-kK-Fga">
+                                <rect key="frame" x="20" y="464.5" width="335" height="101.5"/>
+                                <string key="text">Uji wawasan dan pengetahuan kamu seputar SBMPTN disini untuk mengetahui kecocokan kamu atau seberapa jauh kemampuan mu terhadap pilihan yang kamu tuju</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C5a-Ag-lGI" firstAttribute="top" secondItem="Qrl-sT-Cuw" secondAttribute="top" constant="88" id="AWB-NP-ZbK"/>
+                            <constraint firstItem="Qrl-sT-Cuw" firstAttribute="trailing" secondItem="qvs-kK-Fga" secondAttribute="trailing" constant="20" id="Bly-DP-TCK"/>
+                            <constraint firstItem="HdD-zU-BTL" firstAttribute="leading" secondItem="Qrl-sT-Cuw" secondAttribute="leading" constant="47.5" id="NlU-cF-vfG"/>
+                            <constraint firstItem="qvs-kK-Fga" firstAttribute="leading" secondItem="Qrl-sT-Cuw" secondAttribute="leading" constant="20" id="O5l-nD-yPS"/>
+                            <constraint firstItem="qvs-kK-Fga" firstAttribute="top" secondItem="Qrl-sT-Cuw" secondAttribute="top" constant="444.5" id="j4l-Wj-FfF"/>
+                            <constraint firstItem="Qrl-sT-Cuw" firstAttribute="bottom" secondItem="HdD-zU-BTL" secondAttribute="bottom" constant="25" id="jzv-w5-S9k"/>
+                            <constraint firstItem="C5a-Ag-lGI" firstAttribute="centerX" secondItem="Fwr-ED-1c3" secondAttribute="centerX" id="rU3-Lm-Emn"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HdD-zU-BTL" secondAttribute="trailing" constant="20" symbolic="YES" id="rqJ-h7-VEu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qrl-sT-Cuw"/>
+                    </view>
+                    <connections>
+                        <outlet property="jarakatas" destination="AWB-NP-ZbK" id="6uY-Tt-Dju"/>
+                        <outlet property="jaraklabel" destination="j4l-Wj-FfF" id="Qk5-R8-l89"/>
+                        <outlet property="labeldesc" destination="qvs-kK-Fga" id="Bva-7B-iwT"/>
+                        <outlet property="lebarbg" destination="F4R-hy-K0G" id="J9e-VE-qJ2"/>
+                        <outlet property="tinggigb" destination="GiJ-xn-rp7" id="img-qR-A5C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sdu-9z-gJK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1421.5999999999999" y="112.89355322338831"/>
+        </scene>
+        <!--Halaman Dua View Controller-->
+        <scene sceneID="CQg-hJ-TJn">
+            <objects>
+                <viewController storyboardIdentifier="bw2" id="wIz-9r-9fJ" customClass="HalamanDuaViewController" customModule="Pinterin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G81-Cz-tSz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagepg2" translatesAutoresizingMaskIntoConstraints="NO" id="Z7h-mH-u7Y">
+                                <rect key="frame" x="87.5" y="108" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="3oz-dI-yYs"/>
+                                    <constraint firstAttribute="width" constant="200" id="qRx-s6-MZY"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAv-vT-eAz">
+                                <rect key="frame" x="47.5" y="609" width="50" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Lewati">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pindahdbs:" destination="wIz-9r-9fJ" eventType="touchUpInside" id="etJ-tV-Ayq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evaluasi hasil perkerjaan mu dengan mendownload materi yang telah kamu kerjakan" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HaR-wT-ljK">
+                                <rect key="frame" x="20" y="464.5" width="335" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Z7h-mH-u7Y" firstAttribute="centerX" secondItem="G81-Cz-tSz" secondAttribute="centerX" id="1In-Wo-I5Q"/>
+                            <constraint firstItem="HaR-wT-ljK" firstAttribute="top" secondItem="Rax-Wi-jar" secondAttribute="top" constant="444.5" id="9e6-Xt-rYq"/>
+                            <constraint firstItem="Rax-Wi-jar" firstAttribute="bottom" secondItem="EAv-vT-eAz" secondAttribute="bottom" constant="25" id="I7U-7O-2TF"/>
+                            <constraint firstItem="Z7h-mH-u7Y" firstAttribute="top" secondItem="Rax-Wi-jar" secondAttribute="top" constant="88" id="TJc-MI-Q9e"/>
+                            <constraint firstItem="EAv-vT-eAz" firstAttribute="leading" secondItem="Rax-Wi-jar" secondAttribute="leading" constant="47.5" id="TpF-NU-Sf7"/>
+                            <constraint firstItem="Rax-Wi-jar" firstAttribute="trailing" secondItem="HaR-wT-ljK" secondAttribute="trailing" constant="20" id="iPD-tq-qSo"/>
+                            <constraint firstItem="HaR-wT-ljK" firstAttribute="leading" secondItem="Rax-Wi-jar" secondAttribute="leading" constant="20" id="lsP-77-e1X"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EAv-vT-eAz" secondAttribute="trailing" constant="20" symbolic="YES" id="rKs-SL-2c3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rax-Wi-jar"/>
+                    </view>
+                    <connections>
+                        <outlet property="jaraklabel" destination="9e6-Xt-rYq" id="jKj-FU-zrD"/>
+                        <outlet property="label2desc" destination="HaR-wT-ljK" id="Agk-O8-Uzx"/>
+                        <outlet property="lebargb" destination="qRx-s6-MZY" id="euW-yd-Qbf"/>
+                        <outlet property="tinggigb" destination="3oz-dI-yYs" id="Sru-nC-sE0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8qT-Hw-GwU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2056.8000000000002" y="112.89355322338831"/>
+        </scene>
+        <!--Halaman Tiga View Controller-->
+        <scene sceneID="Sad-Z0-ksf">
+            <objects>
+                <viewController storyboardIdentifier="bw3" id="EaV-4l-8Pj" customClass="HalamanTigaViewController" customModule="Pinterin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iXO-xe-mhG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagepg3" translatesAutoresizingMaskIntoConstraints="NO" id="pkm-qz-PXv">
+                                <rect key="frame" x="87.5" y="108" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="0BO-UU-23x"/>
+                                    <constraint firstAttribute="width" constant="200" id="0Hd-Qn-4rc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bersama ratusan orang lainnya eksplorasi dan ketahui kemampuan kamu bersama Pinterin" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hpj-Gh-e9j">
+                                <rect key="frame" x="20" y="464.5" width="335" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leg-Rk-JX7">
+                                <rect key="frame" x="272.5" y="611" width="75" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="btnNext">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="masuk:" destination="EaV-4l-8Pj" eventType="touchUpInside" id="Hf7-RB-i1D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="hpj-Gh-e9j" firstAttribute="top" secondItem="hQD-bs-HRj" secondAttribute="top" constant="444.5" id="2j1-F8-XTK"/>
+                            <constraint firstItem="pkm-qz-PXv" firstAttribute="centerX" secondItem="iXO-xe-mhG" secondAttribute="centerX" id="82p-lR-ucr"/>
+                            <constraint firstItem="hQD-bs-HRj" firstAttribute="trailing" secondItem="hpj-Gh-e9j" secondAttribute="trailing" constant="20" id="KiY-pK-BcK"/>
+                            <constraint firstItem="hQD-bs-HRj" firstAttribute="bottom" secondItem="leg-Rk-JX7" secondAttribute="bottom" constant="25" id="YFn-BM-QAv"/>
+                            <constraint firstItem="hpj-Gh-e9j" firstAttribute="leading" secondItem="hQD-bs-HRj" secondAttribute="leading" constant="20" id="emx-oE-IGs"/>
+                            <constraint firstItem="hQD-bs-HRj" firstAttribute="trailing" secondItem="leg-Rk-JX7" secondAttribute="trailing" constant="27.5" id="seK-WR-92M"/>
+                            <constraint firstItem="pkm-qz-PXv" firstAttribute="top" secondItem="hQD-bs-HRj" secondAttribute="top" constant="88" id="u9k-08-DQb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hQD-bs-HRj"/>
+                    </view>
+                    <connections>
+                        <outlet property="jaraklabel" destination="2j1-F8-XTK" id="QZ9-i7-RVa"/>
+                        <outlet property="labeldesc" destination="hpj-Gh-e9j" id="R9m-lG-AnS"/>
+                        <outlet property="lebargb" destination="0Hd-Qn-4rc" id="p1b-B6-t3Z"/>
+                        <outlet property="tinggigb" destination="0BO-UU-23x" id="X6G-mU-bLg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jo3-Sp-Ckn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2740" y="112.89355322338831"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btnNext" width="75" height="31"/>
+        <image name="imagepg1" width="244" height="243"/>
+        <image name="imagepg2" width="244" height="243"/>
+        <image name="imagepg3" width="244" height="243"/>
+    </resources>
+</document>
